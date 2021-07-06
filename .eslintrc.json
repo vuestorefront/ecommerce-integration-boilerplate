@@ -123,7 +123,8 @@
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-unused-vars": 2,
-    "@typescript-eslint/ban-ts-ignore": 0
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "overrides": [
     {
@@ -131,6 +132,12 @@
       "rules": {
         "no-undef": "off",
         "no-unused-vars": "off"
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": ["error"]
       }
     }
   ]
