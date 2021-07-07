@@ -1,5 +1,5 @@
 import { apiClientFactory } from '@vue-storefront/core';
-import { Setttings, Endpoints } from './types';
+import type { Setttings, Endpoints } from './types';
 
 function onCreate(settings: Setttings) {
   return {
