@@ -1,4 +1,6 @@
 import webpack from 'webpack';
+import { VSF_LOCALE_COOKIE } from '@vue-storefront/core';
+import theme from './themeConfig';
 
 export default {
   server: {
@@ -90,19 +92,43 @@ export default {
   ],
 
   i18n: {
-    locales: ['en'],
+    currency: 'USD',
+    country: 'US',
+    countries: [
+      { name: 'US', label: 'United States', states: ['California', 'Nevada'] },
+      { name: 'AT', label: 'Austria' },
+      { name: 'DE', label: 'Germany' },
+      { name: 'NL', label: 'Netherlands' }
+    ],
+    currencies: [
+      { name: 'EUR', label: 'Euro' },
+      { name: 'USD', label: 'Dollar' }
+    ],
+    locales: [
+      { code: 'en', label: 'English', file: 'en.js', iso: 'en' },
+      { code: 'de', label: 'German', file: 'de.js', iso: 'de' }
+    ],
     defaultLocale: 'en',
-    strategy: 'no_prefix',
+    lazy: true,
+    seo: true,
+    langDir: 'lang/',
     vueI18n: {
       fallbackLocale: 'en',
-      messages: {
+      numberFormats: {
         en: {
-          welcome: 'Welcome 1'
+          currency: {
+            style: 'currency', currency: 'USD', currencyDisplay: 'symbol'
+          }
         },
         de: {
-          welcome: 'Welcome 2'
+          currency: {
+            style: 'currency', currency: 'EUR', currencyDisplay: 'symbol'
+          }
         }
       }
+    },
+    detectBrowserLanguage: {
+      cookieKey: VSF_LOCALE_COOKIE
     }
   },
 
@@ -112,6 +138,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-private-methods', { loose: true }]
+      ]
+    },
     transpile: [
       'vee-validate/dist/rules'
     ],
@@ -123,10 +154,37 @@ export default {
           lastCommit: process.env.LAST_COMMIT || ''
         })
       })
-    ]
+    ],
+    extend (config, ctx) {
+      if (ctx && ctx.isClient) {
+        config.optimization = {
+          ...config.optimization,
+          mergeDuplicateChunks: true,
+          splitChunks: {
+            ...config.optimization.splitChunks,
+            chunks: 'all',
+            automaticNameDelimiter: '.',
+            maxSize: 128_000,
+            maxInitialRequests: Number.POSITIVE_INFINITY,
+            minSize: 0,
+            maxAsyncRequests: 10,
+            cacheGroups: {
+              vendor: {
+                test: /[/\\]node_modules[/\\]/,
+                name: (module) => `${module
+                  .context
+                  .match(/[/\\]node_modules[/\\](.*?)([/\\]|$)/)[1]
+                  .replace(/[.@_]/gm, '')}`
+              }
+            }
+          }
+        };
+      }
+    }
   },
 
   router: {
+    middleware: ['checkout'],
     scrollBehavior (_to, _from, savedPosition) {
       if (savedPosition) {
         return savedPosition;
@@ -134,5 +192,8 @@ export default {
         return { x: 0, y: 0 };
       }
     }
+  },
+  publicRuntimeConfig: {
+    theme
   }
 };
