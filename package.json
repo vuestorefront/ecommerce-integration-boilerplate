@@ -20,7 +20,7 @@
     "update:update": "ncu -u && lerna run update:update --stream",
     "version:patch": "lerna version patch --yes",
     "version:minor": "lerna version minor --yes",
-    "release:patch": "lerna publish patch --yes --skip-npm --force-publish=*",
+    "release:patch": "lerna publish patch --yes --skip-npm",
     "release:minor": "lerna publish minor --yes --skip-npm --force-publish=*",
     "start": "cd packages/theme && yarn start"
   },
