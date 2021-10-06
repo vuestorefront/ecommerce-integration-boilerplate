@@ -1,5 +1,5 @@
 import { UserOrderGetters } from '@vue-storefront/core';
-import type { Order, OrderItem } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Order, OrderItem } from '@vue-storefront/temp-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getDate(order: Order): string {

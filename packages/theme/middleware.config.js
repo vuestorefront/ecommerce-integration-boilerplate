@@ -1,7 +1,7 @@
 module.exports = {
   integrations: {
-    <% INTEGRATION %>: {
-      location: '@vue-storefront/<% INTEGRATION %>-api/server',
+    temp: {
+      location: '@vue-storefront/temp-api/server',
       configuration: {}
     }
   }

@@ -3,7 +3,7 @@
 This is a template, to use it you must rename the project changing the `{YOUR INTEGRATION NAME}` to the name of the integration you are developing. The name must be in lowercase and without any special characters.
 
 ```sh
-grep -rl '<% INTEGRATION %>' ./ | xargs sed -i '' 's/<% INTEGRATION %>/{YOUR INTEGRATION NAME}/g'
+grep -rl 'temp' ./ | xargs sed -i '' 's/temp/{YOUR INTEGRATION NAME}/g'
 ```
 
 ------
@@ -12,7 +12,7 @@ grep -rl '<% INTEGRATION %>' ./ | xargs sed -i '' 's/<% INTEGRATION %>/{YOUR INT
 <img src="https://blog.vuestorefront.io/wp-content/uploads/2020/01/1QU9F6hQlFyHsJIbsdmt6FA.png" height="80px"/>  
 </div>
 
-## Vue Storefront 2 integration with <% INTEGRATION %>
+## Vue Storefront 2 integration with temp
 
 To learn how to build your integration, see our [Integration guide](https://docs.vuestorefront.io/v2/integrate/integration-guide.html).
 
@@ -32,7 +32,7 @@ vsf init <project_name> && cd <project_name> && yarn && yarn dev
 
 ## How to start if you want to contribute?
 
-Want to contribute? Ping us on `<% INTEGRATION %>` channel on [our Discord](https://discord.vuestorefront.io)!
+Want to contribute? Ping us on `temp` channel on [our Discord](https://discord.vuestorefront.io)!
 
 ### Requirements:
 - NodeJS v14 or later
@@ -42,8 +42,8 @@ Want to contribute? Ping us on `<% INTEGRATION %>` channel on [our Discord](http
 2. Clone your fork of the repo
     ```
     example:
-    git clone https://github.com/vuestorefront/<% INTEGRATION %>.git
-    cd <% INTEGRATION %>
+    git clone https://github.com/vuestorefront/temp.git
+    cd temp
     ```
 3. Run `yarn` to install dependencies
 4. Build dependencies `yarn build:api-client && yarn build:composables`
@@ -54,12 +54,12 @@ Want to contribute? Ping us on `<% INTEGRATION %>` channel on [our Discord](http
 ## Resources
 
 - [Vue Storefront Documentation](https://docs.vuestorefront.io/v2/)
-- [<% INTEGRATION %> integration Documentation](https://docs.vuestorefront.io/<% INTEGRATION %>)
+- [temp integration Documentation](https://docs.vuestorefront.io/temp)
 - [Community Chat](https://discord.vuestorefront.io)
 
 ## Support
 
-If you have any questions about this integration we will be happy to answer them on `<% INTEGRATION %>` channel on [our Discord](discord.vuestorefront.io).
+If you have any questions about this integration we will be happy to answer them on `temp` channel on [our Discord](discord.vuestorefront.io).
 
 ## Contributors ✨
 
