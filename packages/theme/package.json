@@ -1,6 +1,6 @@
 {
   "name": "@vue-storefront/temp-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "build": "nuxt build -m",
@@ -25,7 +25,7 @@
     "@vue-storefront/middleware": "~2.4.1",
     "@vue-storefront/nuxt": "~2.4.1",
     "@vue-storefront/nuxt-theme": "~2.4.1",
-    "@vue-storefront/temp": "~0.0.1",
+    "@vue-storefront/temp": "^0.0.2",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.16.1",
     "nuxt": "^2.15.7",
