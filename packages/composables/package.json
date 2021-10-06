@@ -1,6 +1,6 @@
 {
   "name": "@vue-storefront/temp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "sideEffects": false,
   "main": "lib/index.cjs.js",
@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@vue-storefront/core": "~2.4.1",
-    "@vue-storefront/temp-api": "^0.0.2"
+    "@vue-storefront/temp-api": "^0.0.3"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.0",
