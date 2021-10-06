@@ -6,7 +6,7 @@
   ],
   "command": {
     "publish": {
-      "message": "Release version: %s",
+      "message": "build: version %s",
       "conventionalCommits": true
     }
   },
