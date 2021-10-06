@@ -1,5 +1,14 @@
 {
   "useWorkspaces": true,
   "npmClient": "yarn",
-  "version": "independent"
+  "packages": [
+    "packages/**/*"
+  ],
+  "command": {
+    "publish": {
+      "message": "Release version: %s",
+      "conventionalCommits": true
+    }
+  },
+  "version": "0.0.1"
 }
