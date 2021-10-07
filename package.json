@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-<% INTEGRATION %>-integration",
+  "name": "ecommerce-temp-integration",
   "private": true,
   "license": "MIT",
   "engines": {

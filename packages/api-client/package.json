@@ -1,5 +1,5 @@
 {
-  "name": "@vue-storefront/<% INTEGRATION %>-api",
+  "name": "@vue-storefront/temp-api",
   "version": "2.4.1",
   "private": true,
   "sideEffects": false,
