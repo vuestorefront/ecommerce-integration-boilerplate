@@ -6,7 +6,7 @@ import {
 import type {
   UserShippingAddress as Address,
   UserShippingAddressItem as AddressItem
-} from '@vue-storefront/temp-api';
+} from '@vue-storefront/<% INTEGRATION %>-api';
 
 const params: UseUserShippingFactoryParams<Address, AddressItem> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

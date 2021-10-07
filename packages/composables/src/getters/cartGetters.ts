@@ -6,7 +6,7 @@ import {
   AgnosticDiscount,
   AgnosticAttribute
 } from '@vue-storefront/core';
-import type { Cart, CartItem } from '@vue-storefront/temp-api';
+import type { Cart, CartItem } from '@vue-storefront/<% INTEGRATION %>-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getItems (cart: Cart): CartItem[] {
