@@ -4,7 +4,7 @@ import {
   AgnosticPrice,
   AgnosticTotals
 } from '@vue-storefront/core';
-import type { Wishlist, WishlistItem } from '@vue-storefront/temp-api';
+import type { Wishlist, WishlistItem } from '@vue-storefront/<% INTEGRATION %>-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getItems(wishlist: Wishlist): WishlistItem[] {

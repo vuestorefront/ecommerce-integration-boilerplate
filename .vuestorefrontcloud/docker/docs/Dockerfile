@@ -10,10 +10,10 @@ RUN cd packages/composables && yarn build && yarn cache clean --all
 
 RUN cd docs \
   && npm install \
-  && sed -i "s/base: '\/',/base: '\/temp\/',/g" ./.vuepress/config.js \
+  && sed -i "s/base: '\/',/base: '\/<% INTEGRATION %>\/',/g" ./.vuepress/config.js \
   && cat ./.vuepress/config.js \
   && npm run build
 
 FROM nginx
 
-COPY --from=build /var/www/docs/.vuepress/dist /usr/share/nginx/html/temp
+COPY --from=build /var/www/docs/.vuepress/dist /usr/share/nginx/html/<% INTEGRATION %>
