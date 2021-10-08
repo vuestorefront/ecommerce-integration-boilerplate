@@ -4,6 +4,10 @@ WORKDIR /var/www
 
 COPY . .
 
+RUN yarn install --network-concurrency 1
+RUN cd packages/api-client && yarn build && yarn cache clean --all
+RUN cd packages/composables && yarn build && yarn cache clean --all
+
 RUN cd docs \
   && npm install \
   && sed -i "s/base: '\/',/base: '\/<% INTEGRATION %>\/',/g" ./.vuepress/config.js \

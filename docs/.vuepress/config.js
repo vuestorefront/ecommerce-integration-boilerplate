@@ -36,6 +36,14 @@ module.exports = {
           ['/guide/about', 'About'],
         ]
       },
+      {
+        title: 'Composables',
+        path: '/composables/'
+      },
+      {
+        title: 'API Client',
+        path: '/api-client/'
+      },
     ]
   }
 }

@@ -6,12 +6,7 @@
     "lib": ["DOM", "ESNext"],
     "resolveJsonModule": true,
     "rootDir": "./src",
-    "declaration": true,
-    "declarationDir": "./lib",
-    "sourceMap": true,
-    "importHelpers": true,
     "allowJs": true,
-    "allowSyntheticDefaultImports": true,
-    "declarationMap": true,
+    "allowSyntheticDefaultImports": true
   }
 }
