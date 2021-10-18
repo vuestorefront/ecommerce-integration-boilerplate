@@ -1,6 +1,6 @@
 {
   "name": "@vue-storefront/<% INTEGRATION %>",
-  "version": "2.4.1",
+  "version": "2.4.3",
   "private": true,
   "sideEffects": false,
   "main": "lib/index.cjs.js",
@@ -16,8 +16,8 @@
     "update:update": "ncu -u"
   },
   "dependencies": {
-    "@vue-storefront/<% INTEGRATION %>-api": "~2.4.1",
-    "@vue-storefront/core": "~2.4.1"
+    "@vue-storefront/<% INTEGRATION %>-api": "~2.4.3",
+    "@vue-storefront/core": "~2.4.3"
   },
   "devDependencies": {
     "rollup-plugin-typescript2": "^0.30.0",

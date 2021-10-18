@@ -27,7 +27,6 @@ export function generateBaseConfig(pkg) {
         extensions
       }),
       typescript({
-        useTsconfigDeclarationDir: true,
         // eslint-disable-next-line global-require
         typescript: require('typescript')
       })
