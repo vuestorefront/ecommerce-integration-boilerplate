@@ -1,6 +1,6 @@
 {
   "name": "@vue-storefront/<% INTEGRATION %>-api",
-  "version": "2.4.3",
+  "version": "0.0.1",
   "private": true,
   "sideEffects": false,
   "server": "server/index.js",
@@ -17,11 +17,11 @@
     "update:update": "ncu -u"
   },
   "dependencies": {
-    "@vue-storefront/core": "~2.4.3"
+    "@vue-storefront/core": "~2.4.5"
   },
   "devDependencies": {
     "rollup-plugin-typescript2": "^0.30.0",
-    "@rollup/plugin-node-resolve": "^13.0.0"
+    "@rollup/plugin-node-resolve": "^13.0.6"
   },
   "files": [
     "lib/**/*"
