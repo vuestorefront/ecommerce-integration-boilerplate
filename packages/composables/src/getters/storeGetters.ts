@@ -12,9 +12,7 @@ function getSelected (stores: Store): AgnosticStore | undefined {
   return null;
 }
 
-const storeGetters: UseStoreGetters<Store, UseStoreFilterParams> = {
+export const storeGetters: UseStoreGetters<Store, UseStoreFilterParams> = {
   getItems,
   getSelected
 };
-
-export default storeGetters;
