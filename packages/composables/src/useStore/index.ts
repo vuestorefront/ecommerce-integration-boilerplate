@@ -1,4 +1,4 @@
-import { Store } from '@vue-storefront/boilerplate-api';
+import { Store } from '@vue-storefront/<% INTEGRATION %>-api';
 import { Context, useStoreFactory } from '@vue-storefront/core';
 
 export const useStore = useStoreFactory<Store>({
