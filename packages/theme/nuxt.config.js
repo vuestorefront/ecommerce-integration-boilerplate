@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-import { VSF_LOCALE_COOKIE } from '@vue-storefront/core';
 import theme from './themeConfig';
 
 export default {
@@ -42,6 +41,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // to core
+    '@nuxtjs/composition-api/module',
     '@nuxt/typescript-build',
     '@nuxtjs/style-resources',
     ['@vue-storefront/nuxt', {
@@ -121,9 +121,7 @@ export default {
         }
       }
     },
-    detectBrowserLanguage: {
-      cookieKey: VSF_LOCALE_COOKIE
-    }
+    detectBrowserLanguage: false
   },
 
   styleResources: {
