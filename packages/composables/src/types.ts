@@ -18,6 +18,8 @@ export type UseReviewAddParams = TODO;
 
 export type UseShippingAddParams = TODO;
 
+export type UseStoreFilterParams = TODO;
+
 export type UseUserUpdateParams = TODO;
 
 export type UseUserRegisterParams = TODO;

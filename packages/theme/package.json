@@ -19,11 +19,10 @@
     "update:update": "ncu -u"
   },
   "dependencies": {
-    "@nuxtjs/pwa": "^3.3.5",
     "@storefront-ui/vue": "0.11.1",
-    "@vue-storefront/middleware": "~2.4.5",
-    "@vue-storefront/nuxt": "~2.4.5",
-    "@vue-storefront/nuxt-theme": "~2.4.5",
+    "@vue-storefront/middleware": "~2.5.2",
+    "@vue-storefront/nuxt": "~2.5.2",
+    "@vue-storefront/nuxt-theme": "~2.5.2",
     "@vue-storefront/<% INTEGRATION %>": "0.0.1",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.0",

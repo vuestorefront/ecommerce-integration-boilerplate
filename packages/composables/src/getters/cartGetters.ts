@@ -9,7 +9,7 @@ import {
 import type { Cart, CartItem } from '@vue-storefront/<% INTEGRATION %>-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-function getItems (cart: Cart): CartItem[] {
+function getItems(cart: Cart): CartItem[] {
   return [
     {}
   ];
