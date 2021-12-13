@@ -1,5 +1,5 @@
 {
-  "name": "ecommerce-<% INTEGRATION %>-integration",
+  "name": "ecommerce-__replace_me__-integration",
   "private": true,
   "license": "MIT",
   "engines": {

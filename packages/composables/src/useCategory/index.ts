@@ -3,7 +3,7 @@ import {
   useCategoryFactory,
   UseCategoryFactoryParams
 } from '@vue-storefront/core';
-import type { Category } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Category } from '@vue-storefront/__replace_me__-api';
 import type {
   UseCategorySearchParams as SearchParams
 } from '../types';

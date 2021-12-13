@@ -4,7 +4,7 @@ import {
   AgnosticPrice,
   ProductGetters
 } from '@vue-storefront/core';
-import type { Product, ProductFilter } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Product, ProductFilter } from '@vue-storefront/__replace_me__-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getName(product: Product): string {

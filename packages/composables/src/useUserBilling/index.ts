@@ -6,7 +6,7 @@ import {
 import type {
   UserBillingAddress as Address,
   UserBillingAddressItem as AddressItem
-} from '@vue-storefront/<% INTEGRATION %>-api';
+} from '@vue-storefront/__replace_me__-api';
 
 const params: UseUserBillingFactoryParams<Address, AddressItem> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

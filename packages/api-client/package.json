@@ -1,5 +1,5 @@
 {
-  "name": "@vue-storefront/<% INTEGRATION %>-api",
+  "name": "@vue-storefront/__replace_me__-api",
   "version": "0.0.1",
   "private": true,
   "sideEffects": false,

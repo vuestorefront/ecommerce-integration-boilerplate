@@ -3,7 +3,7 @@ import {
   useUserOrderFactory,
   UseUserOrderFactoryParams
 } from '@vue-storefront/core';
-import type { Order } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Order } from '@vue-storefront/__replace_me__-api';
 import type {
   useUserOrderSearchParams as SearchParams
 } from '../types';

@@ -1,5 +1,8 @@
 **/node_modules/**/*
 **/lib/*
+**/tests/*
+packages/composables/nuxt/plugin.js
 packages/theme/_theme
 packages/theme/.nuxt
-**/tests/*
+packages/theme/middleware.config.js
+packages/theme/nuxt.config.js
