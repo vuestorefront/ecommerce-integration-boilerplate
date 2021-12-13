@@ -14,7 +14,7 @@ on:
 
 jobs:
   prepare_dependencies:
-    name: Prepare dependencies
+    name: Install dependencies
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -30,7 +30,7 @@ jobs:
         run: yarn --frozen-lockfile
 
   lint:
-    name: Lint
+    name: Run linter
     needs: prepare_dependencies
     runs-on: ubuntu-latest
     steps:
@@ -50,7 +50,7 @@ jobs:
         run: yarn lint
 
   test:
-    name: Test api-client and composables
+    name: Test all packages
     needs: prepare_dependencies
     runs-on: ubuntu-latest
     steps:
