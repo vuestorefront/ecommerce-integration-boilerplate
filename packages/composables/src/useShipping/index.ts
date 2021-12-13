@@ -3,7 +3,7 @@ import {
   useShippingFactory,
   UseShippingParams
 } from '@vue-storefront/core';
-import type { ShippingAddress } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { ShippingAddress } from '@vue-storefront/__replace_me__-api';
 import type {
   UseShippingAddParams as AddParams
 } from '../types';

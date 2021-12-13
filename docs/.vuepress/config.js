@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'Vue Storefront 2 for <% INTEGRATION %>',
+  title: 'Vue Storefront 2 for __replace_me__',
   base: '/',
-  description: 'Documentation for the <% INTEGRATION %> connector for Vue Storefront 2',
+  description: 'Documentation for the __replace_me__ connector for Vue Storefront 2',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
@@ -33,7 +33,7 @@ module.exports = {
   '@vuepress/search'
 ],
   themeConfig: {
-    repo: 'https://github.com/vuestorefront/<% INTEGRATION %>',
+    repo: 'https://github.com/vuestorefront/__replace_me__',
     editLinks: true,
     docsDir: 'docs',
     docsBranch: 'develop',
@@ -43,8 +43,8 @@ module.exports = {
       { text: 'Vue Storefront', link: 'https://vuestorefront.io/' },
       { text: 'Core Documentation', link: 'https://docs.vuestorefront.io/v2/' },
       // { text: 'Demo', link: '' },
-      { text: 'GitHub', link: 'https://github.com/vuestorefront/<% INTEGRATION %>'},
-      { text: 'Roadmap', link: 'https://github.com/vuestorefront/<% INTEGRATION %>'}
+      { text: 'GitHub', link: 'https://github.com/vuestorefront/__replace_me__'},
+      { text: 'Roadmap', link: 'https://github.com/vuestorefront/__replace_me__'}
     ],
     sidebar: [
       {

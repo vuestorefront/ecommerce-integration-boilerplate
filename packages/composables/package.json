@@ -1,5 +1,5 @@
 {
-  "name": "@vue-storefront/<% INTEGRATION %>",
+  "name": "@vue-storefront/__replace_me__",
   "version": "0.0.1",
   "private": true,
   "sideEffects": false,
@@ -16,7 +16,7 @@
     "update:update": "ncu -u"
   },
   "dependencies": {
-    "@vue-storefront/<% INTEGRATION %>-api": "0.0.1",
+    "@vue-storefront/__replace_me__-api": "0.0.1",
     "@vue-storefront/core": "~2.5.2"
   },
   "devDependencies": {

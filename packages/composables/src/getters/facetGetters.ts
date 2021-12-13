@@ -8,7 +8,7 @@ import {
   AgnosticBreadcrumb,
   AgnosticFacet
 } from '@vue-storefront/core';
-import type { Facet, FacetSearchCriteria } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Facet, FacetSearchCriteria } from '@vue-storefront/__replace_me__-api';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 function getAll(params: FacetSearchResult<Facet>, criteria?: FacetSearchCriteria): AgnosticFacet[] {

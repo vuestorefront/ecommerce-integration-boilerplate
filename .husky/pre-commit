@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx lerna run --parallel precommit
+# add "--parallel" once this bug is fixed https://github.com/okonet/lint-staged/issues/988
+npx lerna run precommit

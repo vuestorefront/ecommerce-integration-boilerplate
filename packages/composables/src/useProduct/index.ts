@@ -3,7 +3,7 @@ import {
   useProductFactory,
   UseProductFactoryParams
 } from '@vue-storefront/core';
-import type { Product } from '@vue-storefront/<% INTEGRATION %>-api';
+import type { Product } from '@vue-storefront/__replace_me__-api';
 import type {
   UseProductSearchParams as SearchParams
 } from '../types';
