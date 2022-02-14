@@ -20,9 +20,9 @@
   },
   "dependencies": {
     "@storefront-ui/vue": "0.11.4",
-    "@vue-storefront/middleware": "~2.5.3",
-    "@vue-storefront/nuxt": "~2.5.3",
-    "@vue-storefront/nuxt-theme": "~2.5.3",
+    "@vue-storefront/middleware": "~2.5.4",
+    "@vue-storefront/nuxt": "~2.5.4",
+    "@vue-storefront/nuxt-theme": "~2.5.4",
     "@vue-storefront/__replace_me__": "0.0.1",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.0",
