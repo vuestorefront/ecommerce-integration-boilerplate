@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@vue-storefront/__replace_me__-api": "0.0.1",
-    "@vue-storefront/core": "~2.5.3"
+    "@vue-storefront/core": "~2.5.4"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.6",

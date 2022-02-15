@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "target": "ES2018",
-    "module": "ESNext",
+    "target": "ES2019",
+    "module": "ES2015",
     "moduleResolution": "Node",
     "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
+      "ES2019",
+      "ES2020",
       "DOM"
     ],
     "esModuleInterop": true,
