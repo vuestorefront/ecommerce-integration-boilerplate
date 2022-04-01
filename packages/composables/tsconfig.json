@@ -1,11 +1,20 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "include": ["src"],
-  "exclude": ["node_modules", "lib"],
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "outDir": "./lib",
     "resolveJsonModule": true,
     "rootDir": "./src",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true
-  }
+    "baseUrl": "./",
+    "lib": [
+      "DOM"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "__tests__",
+    "lib",
+    "node_modules"
+  ]
 }

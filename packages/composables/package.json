@@ -3,12 +3,19 @@
   "version": "0.0.1",
   "private": true,
   "sideEffects": false,
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./nuxt": "./nuxt/index.js",
+    "./package.json": "./package.json"
+  },
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "rimraf lib && rollup -c",
-    "dev": "rollup -c -w",
+    "build": "yarn build:clear && yarn build:package && yarn build:types",
+    "build:clear": "rimraf lib",
+    "build:package": "node ../../scripts/build --file=src/index.ts",
+    "build:types": "tsc --emitDeclarationOnly",
+    "dev": "yarn build:package --watch",
     "precommit": "lint-staged",
     "prepublish": "yarn build",
     "test": "jest",

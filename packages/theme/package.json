@@ -2,6 +2,9 @@
   "name": "@vue-storefront/__replace_me__-theme",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">=14.17.x"
+  },
   "scripts": {
     "build": "nuxt build -m",
     "build:analyze": "nuxt build -a -m",
@@ -20,10 +23,10 @@
   },
   "dependencies": {
     "@storefront-ui/vue": "0.11.4",
+    "@vue-storefront/__replace_me__": "0.0.1",
     "@vue-storefront/middleware": "~2.5.4",
     "@vue-storefront/nuxt": "~2.5.4",
     "@vue-storefront/nuxt-theme": "~2.5.4",
-    "@vue-storefront/__replace_me__": "0.0.1",
     "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.19.0",
     "nuxt": "^2.15.8",
@@ -38,10 +41,11 @@
     "cypress": "^8.7.0",
     "cypress-pipe": "^2.0.0",
     "cypress-tags": "^0.3.0",
-    "jest": "^27.3.1",
+    "jest": "^27.5.1",
     "mochawesome": "^6.3.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0",
+    "ts-loader": "^8.1.0",
     "vue-jest": "^4.0.0-0"
   }
 }

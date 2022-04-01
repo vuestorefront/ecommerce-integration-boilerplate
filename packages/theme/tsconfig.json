@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "target": "ES2019",
+    "target": "ES2020",
     "module": "ES2015",
     "moduleResolution": "Node",
     "lib": [
-      "ES2019",
       "ES2020",
       "DOM"
     ],
@@ -16,12 +15,8 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
     "types": [
       "@types/node",

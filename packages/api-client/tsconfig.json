@@ -1,6 +1,17 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "ES2019"
-  }
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "lib": []
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "__tests__",
+    "lib",
+    "node_modules"
+  ]
 }
