@@ -24,7 +24,7 @@
     "update:update": "ncu -u"
   },
   "dependencies": {
-    "@vue-storefront/core": "~2.5.3"
+    "@vue-storefront/core": "~2.5.4"
   },
   "devDependencies": {
     "concurrently": "^7.0.0"
