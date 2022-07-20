@@ -8,13 +8,13 @@ import type {
   UseProductSearchParams as SearchParams
 } from '../types';
 
-const params: UseProductFactoryParams<Product, SearchParams> = {
+const params: UseProductFactoryParams<Product[], SearchParams> = {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   productsSearch: async (context: Context, params) => {
     console.log('Mocked: useProduct.productsSearch');
 
-    return {};
+    return [];
   }
 };
 
-export const useProduct = useProductFactory<Product, SearchParams>(params);
+export const useProduct = useProductFactory<Product[], SearchParams>(params);
