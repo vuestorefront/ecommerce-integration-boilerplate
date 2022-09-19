@@ -1,12 +1,16 @@
 # Supported features
 
-::: tip Delete this block before publishing.
+::: subheader
+The Vue Storefront integration with replace_me comes with many features out-of-the-box.
+:::
 
-Tip: features should be grouped by category...
+::: warning BOILERPLATE NOTE - Delete this block before publishing.
+
+Features should be grouped by category. replace_me
 
 :::
 
-This page shows the __replace_me__ features supported by this integration. If the feature you need is not supported, reach out to us on [our Discord server](https://discord.vuestorefront.io/).
+This page shows the replace_me features supported by this integration. If the feature you need is not supported, reach out to us on [our Discord server](https://discord.vuestorefront.io/).
 
 ## Example Category Table
 
