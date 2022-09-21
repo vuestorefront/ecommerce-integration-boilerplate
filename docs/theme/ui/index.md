@@ -1,4 +1,3 @@
-
 # Default UI Elements
 
 ::: subheader
@@ -13,25 +12,25 @@ However, you are not limited to using these UI elements. You can customize them 
 
 :::::: col-wrapper-gap
 ::: col-1/2
-<NavigationalCard
+<NavCard
 to='/theme/ui/components'
 title="Components"
 description="Functions that encapsulate common business logic like fetching products, adding to a cart, and more"
 :border="true"
->
+> 
 <Icon icon="ri:code-s-slash-fill" width=24 color="#ffffff" />
-</NavigationalCard>
+</NavCard>
 :::
 
 ::: col-1/2
-<NavigationalCard
+<NavCard
 to='/theme/ui/pages'
 title="Pages"
 description="Functions that encapsulate common business logic like fetching products, adding to a cart, and more"
 :border="true"
->
+> 
 <Icon icon="ri:code-s-slash-fill" width=24 color="#ffffff" />
-</NavigationalCard>
+</NavCard>
 :::
 
 ::::::
