@@ -1,6 +1,6 @@
 const resolve = require('path').resolve;
 
-const INTEGRATION_NAME = 'replace_me Integration'; // This should be a single-word and not include Vue Storefront (e.g. Magento)
+const INTEGRATION_NAME = 'replace_me Integration'; // This should include "Vue Storefront"
 
 module.exports = {
   title: `Vue Storefront 2 for ${INTEGRATION_NAME}`,
@@ -52,6 +52,7 @@ module.exports = {
     repo: 'https://github.com/vuestorefront/replace_me',
     docsRepoPath: 'https://github.com/vuestorefront/replace_me/tree/main/docs', // used to generate direct edit links on docs pages.
     secondaryNav: [
+      { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started/' },
       { text: 'Guides', link: '/guides/' },
       { text: 'Default Theme', link: '/theme/' },
