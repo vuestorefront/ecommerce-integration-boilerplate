@@ -1,5 +1,3 @@
-const resolve = require('path').resolve;
-
 const INTEGRATION_NAME = 'replace_me Integration'; // This should include "Vue Storefront"
 
 module.exports = {
@@ -7,46 +5,9 @@ module.exports = {
   base: '/',
   description: `Documentation for the ${INTEGRATION_NAME} integration for Vue Storefront 2`,
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],
-  configureWebpack: (config) => {
-    // Add support for webp images
-    config.module.rules.push({
-      test: /\.(webp)(\?.*)?$/,
-      use: [
-        {
-          loader: 'url-loader',
-          options: {
-            limit: 10000,
-            name: 'assets/img/[name].[hash:8].[ext]'
-          }
-        }
-      ]
-    });
 
-    // Fix image loading. Ref: https://github.com/vuejs/vue-loader/issues/1612#issuecomment-559366730
-    config.module.rules = config.module.rules.map((rule) => {
-      rule.use =
-        rule.use &&
-        rule.use.map((useRule) => {
-          if (useRule.loader === 'url-loader') {
-            useRule.options.esModule = false;
-          }
+  theme: 'vsf-docs',
 
-          return useRule;
-        });
-
-      return rule;
-    });
-  },
-  markdown: {
-    anchor: {
-      permalinkBefore: false,
-      permaLinkAfter: true,
-      permalinkSymbol:
-        '<svg  viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></g></svg>'
-    }
-  },
-  // theme: 'vsf-docs',
-  theme: resolve(__dirname, '../../../vuepress-theme-vsf-docs'),
   themeConfig: {
     title: INTEGRATION_NAME,
     repo: 'https://github.com/vuestorefront/replace_me',

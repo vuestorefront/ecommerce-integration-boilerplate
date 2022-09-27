@@ -5293,6 +5293,11 @@ markdown-it-anchor@^5.0.2:
   resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-5.3.0.tgz#d549acd64856a8ecd1bea58365ef385effbac744"
   integrity sha512-/V1MnLL/rgJ3jkMWo84UR+K+jF1cxNG1a+KwqeXqTIJ+jtA8aWSHuigx8lTzauiIjBDbwF3NcWQMotd0Dm39jA==
 
+markdown-it-anchor@^8.6.5:
+  version "8.6.5"
+  resolved "https://registrynpm.storefrontcloud.io/markdown-it-anchor/-/markdown-it-anchor-8.6.5.tgz#30c4bc5bbff327f15ce3c429010ec7ba75e7b5f8"
+  integrity sha512-PI1qEHHkTNWT+X6Ip9w+paonfIQ+QZP9sCeMYi47oqhH+EsW8CrJ8J7CzV19QVOj6il8ATGbK2nTECj22ZHGvQ==
+
 markdown-it-chain@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/markdown-it-chain/-/markdown-it-chain-1.3.0.tgz#ccf6fe86c10266bafb4e547380dfd7f277cc17bc"
@@ -8278,14 +8283,15 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-vsf-docs@^1.0.21:
-  version "1.0.21"
-  resolved "https://registrynpm.storefrontcloud.io/vuepress-theme-vsf-docs/-/vuepress-theme-vsf-docs-1.0.21.tgz#4ab09e0c52df9fd345f1ad418387a9c902017f3f"
-  integrity sha512-FhebkZ0wafP/yEKblqtsDxLK5EP/3DPUYITlZgp4yV22OGU4CFRHpz+Sv3ogjktXl+foY4CAo/Pvc/4FWr23Yw==
+vuepress-theme-vsf-docs@^1.1.0-alpha.1:
+  version "1.1.0-alpha.1"
+  resolved "https://registrynpm.storefrontcloud.io/vuepress-theme-vsf-docs/-/vuepress-theme-vsf-docs-1.1.0-alpha.1.tgz#e8f8344fb96330ea6ee792a206da129965e3d41a"
+  integrity sha512-XG5JyIKqMOfpsf53uz8QbS66UA/T8sftHB8N22d5ssiJylGucgfM1GxIvCo5LSJQ7bu7ZErlaEZv2/mz80yVWw==
   dependencies:
     "@vuepress/plugin-active-header-links" "1.9.7"
     "@vuepress/plugin-nprogress" "1.9.7"
     "@vuepress/plugin-search" "1.9.7"
+    markdown-it-anchor "^8.6.5"
     vuepress-plugin-container "^2.0.2"
 
 vuepress@^1.8.2:
